@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:contentDescription="@string/profilePicture"
+            app:srcCompat="@drawable/_pngtree_abstract_liquid_element_graphic_gradient_4843115_removebg" />
+
+        <EditText
+            android:id="@+id/editText"
+
+            style="@style/gravityMarginTop"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="0.14"
+            android:autofillHints="no"
+            android:background="@drawable/rounded_edittext"
+            android:drawablePadding="20dp"
+            android:hint="@string/hobbyList"
+            android:importantForAutofill="no"
+            android:inputType="textShortMessage|text"
+            android:minHeight="48dp"
+            android:textColorHighlight="#757575"
+            android:textColorHint="#78909C"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/gravityMarginTop"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.14"
+            android:text="@string/DoneButton"
+            android:visibility="visible" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/alex_brush"
+                android:lineSpacingMultiplier="1.8"
+                android:text="@string/Describtion"
+                android:textSize="24sp" />
+        </ScrollView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.14"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:text="@string/button1"
+                tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button2"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button3"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
